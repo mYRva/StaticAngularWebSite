@@ -1,0 +1,20 @@
+<section id="industries">
+  <div class="container">
+    <h2>{{data.title}}</h2>
+    <div class="service_wrapper">
+      <div class="row">
+        <div class="col-lg-4 industry-column" *ngFor="let item of data.list">
+          <div class="service_block">
+            <div class="specializations_icon"> <span><i class="material-icons">{{item.icon}}</i></span> </div>
+            <h3>{{item.title}}</h3>
+            <ul>
+            <li *ngFor="let subItem of item.sublist">
+              {{subItem}}
+            </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+     </div>
+  </div>
+</section>

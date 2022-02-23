@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'Merienda-Regular'; /*a name to be used later*/
+  src: url('/Merienda-Regular'); /*URL to font*/
+}
+
+#navigation{
+  font-family: 'Merienda-Regular';
+}
+
+.stickybar {
+  background-color: rgb(243, 134, 9);;
+  position: fixed;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top:5px;
+  top: 0;
+  z-index: 99;
+}
+
+.mat-toolbar {
+  background-color: #000000;
+  color: #A1ACB3;
+  display: block;
+  left: auto;
+  right: auto;
+  height: 4em;
+  padding: 1.5rem 3rem;
+  max-width: 1400px;
+  margin: auto;
+
+}
+
+h1{
+  font-size: 30px;
+  color:  rgb(243, 134, 9);
+  letter-spacing: 2px;
+}
+
+h2{
+  color: rgb(243, 134, 9);
+}
+
+
+
+.img{
+  width:12em;
+  height:auto;
+}
+
+.img:hover{
+  cursor:pointer;
+}
+
+.img-xs{
+  display: none;
+}
+
+.contactrow {
+  width: 150px;
+  margin-right: .7em;
+  letter-spacing: 2px;
+  font-size: 16px;
+  padding-top: 15px;
+}
+
+.socialicon{
+    margin-top: 5px;
+    margin-right: 5px;
+    width: 10px;
+}
+
+.mat-button{
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  padding: 5px;
+  color: #A1ACB3;
+  &.active{
+    background-color: rgb(243, 134, 9);
+  }
+}
+::ng-deep {
+  .mat-menu-content{
+    button{
+      text-align: center;
+
+    }
+    width: 180px;
+  }
+  // #mat-menu-panel-0 > div > div > button.mat-focus-indicator.active.mat-menu-item.ng-star-inserted
+  .active.mat-menu-item{
+      background-color: rgb(243, 134, 9);
+      color: #fff;
+      padding: 0 16px;
+      width: 80%;
+      margin: 0 16px;
+      border-radius: 4px;
+  }
+  .mat-button-wrapper{
+    color: rgb(243, 134, 9);
+    margin: 10px;
+  }
+  .mat-button.active .mat-button-wrapper{
+    background-color: rgb(243, 134, 9);
+    color: #fff;
+  }
+  .cellphone{
+    color: #fff;
+    font-size: 1rem;
+  }
+  .mat-menu-panel{
+    background-color: #000;
+    button{
+      color: rgb(243, 134, 9);
+    }
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .mat-toolbar {
+    padding: 10px;
+    // border: 1px solid blue;
+    h1{
+      font-size: 1.5rem;
+    }
+    .cellphone{
+      color: #fff;
+      font-size: 1rem;
+    }
+  }
+}

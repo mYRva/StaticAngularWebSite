@@ -1,0 +1,69 @@
+<div  class="stickybar">
+  <mat-toolbar fxLayout="row" fxLayoutAlign="space-between center">
+    <!-- Logo -->
+        <div fxLayoutAlign="end center" ngClass="['img','img-xs']"
+        ngClass.gt-xs="img" 
+        ngClass.xs="img-xs" style="width: 10%;" >
+              <!-- <mat-icon svgIcon="logo" 
+              ngClass="['img','img-xs']"
+              ngClass.gt-xs="img" 
+              ngClass.xs="img-xs" 
+              alt=" " >
+            </mat-icon> -->
+            <img [src]="imgUrl" class="w-100 "/>
+        </div>
+
+     <!-- Title -->
+      <div>
+        <h1 ngClass="['h1','title-m','title-s','title-xs']"
+            ngClass.gt-md="h1" ngClass.md="title-m"
+            ngClass.sm="title-s" ngClass.xs="title-xs">{{ title }}
+        </h1>
+
+        <h2 >{{byline}}</h2>
+        <span class="cellphone">{{ phone }}</span>
+         
+      </div>
+  
+     <!-- Contact Info -->
+      <div fxLayout="column" fxLayoutAlign="end center" fxHide fxShow.gt-sm>
+
+       
+      <!-- Menu Items -->
+      <div>  
+        <button mat-button 
+                *ngFor="let item of menuItems" [value]="item"
+                
+                [attr.id]="item.anchor+'-menu'"
+                (click)="scrollTo(item)" title="{{ item.title }}" 
+                >
+          {{ item.label }}
+        </button>
+      </div>
+          
+      </div>
+  
+      <!-- Drop Down Menu -->
+      <button mat-icon-button [matMenuTriggerFor]="dropMenu" fxHide fxShow.sm fxShow.lt-sm fxFlexAlign="center">
+      <mat-icon>menu</mat-icon>
+      </button>
+  
+      <mat-menu #dropMenu="matMenu">
+      <ng-container>
+        <div id="menu-items">
+          <button mat-menu-item
+                  *ngFor="let item of menuItems"
+                  [value]="item"
+                  (click)="scrollTo(item)"
+                  [attr.id]="item.anchor+'-menu-list'"
+                  [class]="{active: item.anchor == currentAnchor}"
+                  >
+            {{ item.label }}
+          </button>
+        </div>
+      </ng-container>
+      </mat-menu> 
+  </mat-toolbar>
+</div>
+
+    

@@ -1,0 +1,60 @@
+#service{
+  padding: 60px 0px;
+  h2{
+    font-size: 38px;
+    color: #222222;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    text-align: center;
+  }
+  h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #111111;
+    margin: 35px 0 18px;
+    text-align: center;
+  }
+  .service_wrapper{
+    padding: 40px 0 40px;
+  }
+  .service_block ul{  
+    list-style: none;
+    text-align: center;
+    font-size: 16px;
+    color: #555555;
+    padding: 0;
+  }
+  .service_icon span {
+    background: transparent;
+    border-radius: 50%;
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  .service_icon i {
+    color: #266100;
+    font-size: 40px;
+    margin-top: 0;
+    position: relative;
+    top: 20px;
+    z-index: 20;
+  }
+  .service-column:nth-child(2){
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+  }
+  .service_icon{
+    img{
+      width: 50%;
+      margin-top: 20px;
+    }
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin: 0px auto 25px;
+    text-align: center;
+    border: 2px solid #266100;
+  }
+}

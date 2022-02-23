@@ -1,0 +1,61 @@
+#industries{
+  padding: 60px 0px;
+  background: #005490;
+  color: #fff;
+  h2 {
+      font-size: 38px;
+      color: #fff;
+      font-family: 'Raleway', sans-serif;
+      font-weight: normal;
+      // margin: 0px 0 25px 0;
+      text-align: center;
+  }
+
+  h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    margin: 35px 0 18px;
+    text-align: center;
+  }
+  .service_wrapper {
+      padding: 40px 0 40px;
+  }
+  ul{
+    text-align: center;
+    font-size: 16px;
+    color: #555555;
+    list-style: none;
+    padding: 0;
+    color: #fff;
+  }
+  .industry-column:nth-child(2){
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+  }
+  .specializations_icon {
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin: 0px auto 25px;
+    border: 2px solid #fff;
+    span {
+        background: transparent;
+        border-radius: 50%;
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+    i {
+        color: #fff;
+        font-size: 40px;
+        margin-top: 0;
+        position: relative;
+        top: 20px;
+        z-index: 20;
+    }
+  }
+}

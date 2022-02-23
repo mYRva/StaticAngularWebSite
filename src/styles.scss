@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+
+@use './assets/styles/style.scss';
+
+@font-face {
+  font-family: "Milestone";
+  src: local("Milestone"), url(./assets/fonts/MilestoneFreeVersion-Script.otf) format("truetype");
+}
+
+.p-sm{
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+.h2-sm{
+  line-height: 22px;
+  font-size: 20px;
+  }
+  
+.h3-sm{
+  line-height: 20px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  }
+
+.mat-card-title {
+  color:#DC143C; 
+  }
+
+.showheaderimg {
+  margin-top: 4em;
+  max-height: 500px;
+
+  }
+
+.hidelogo{
+  display:none
+}
+
+.mb-lg{
+  margin-bottom: 100px;
+}
+
+.mb-sm{
+  margin-bottom: 20px;
+}
+
+.h3-title{
+  padding-left: 20px;
+}

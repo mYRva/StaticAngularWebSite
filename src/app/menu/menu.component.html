@@ -1,0 +1,125 @@
+<div style="height: 100px;"></div>
+<div id="menu" >
+  <h2>Menu</h2>
+  
+  <div class="fdm-sidebar fdm-menu-sidebar-div fdm-sidebar-display-1" >
+   
+    <div class="row">
+        <div class="col-md-4">
+            <div class="btn-group">
+                <div  class="fdm-menu-sidebar-section-title fdm-menu-sidebar-section-title-selected" 
+                    (click)="showDiv.elotes   = !showDiv.elotes;
+                             showDiv.esquites = false;
+                             showDiv.tostitos = false">
+                    
+                    <div style="text-align: center;">Elotes</div>
+                </div>
+                <div class="fdm-menu-sidebar-section-title fdm-menu-sidebar-section-title-selected"
+                    (click)="showDiv.esquites = !showDiv.esquites;
+                             showDiv.elotes   = false;
+                             showDiv.tostitos  = false">
+                    <div style="text-align: center;">Esquites</div>
+                </div>
+                <div class="fdm-menu-sidebar-section-title fdm-menu-sidebar-section-title-selected"
+                    (click)="showDiv.tostitos = !showDiv.tostitos;
+                                                   showDiv.elotes = false;
+                                                   showDiv.esquites = false">
+                    <div style="text-align: center;">TostiEsquites</div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>   
+  </div>
+  <div fxLayoutAlign="center">
+    <div *ngIf="showDiv.elotes" style="width: auto;">
+    
+      <ul class="fdm-menu fdm-menu-classic fdm-menu-sidebar-1 fdm-layout-classic clearfix">
+        <li class="fdm-section-header" id="Elotes">               
+                <div class="fdm-section-header-image-area" 
+                    style="background-image: url(./assets/images/elotes.jpg); background-repeat: no-repeat; background-size: cover; height: 350px;">
+                </div>        
+                <h3 class="fdm-section-header">ELOTES</h3>
+        </li>
+        <!-- Opcion Elote 1 -->
+        <li class="fdm-item fdm-item-has-price" data-postid="603" data-section="37" data-timeadded="1616630188">		
+          <div class="fdm-item-panel">    
+              <p class="fdm-item-title">Elotes Asados <span>(korn)</span></p>
+              <div class="fdm-item-price-wrapper" data-min_price="1000000" data-max_price="0">
+                <div class="fdm-item-price">$2.75 each</div>
+              </div>
+            <div class="fdm-item-content">
+              <p><!-- wp:paragraph --></p>
+              <p>Description 1</p>
+              <p><!-- /wp:paragraph --></p>
+            </div>
+            <div class="clearfix"></div>
+          </div>        
+        </li>
+
+        <li class="fdm-item fdm-item-has-price" data-postid="603" data-section="37" data-timeadded="1616630188">
+          <div>Opcion Elote 2</div>
+        </li>
+        <li class="fdm-item fdm-item-has-price" data-postid="603" data-section="37" data-timeadded="1616630188">
+          <div>Opcion Elote 3</div>
+          
+        </li>    
+      </ul>  
+      
+      
+    </div>  
+    
+    <div *ngIf="showDiv.esquites">
+      <ul class="fdm-menu fdm-menu-classic fdm-menu-sidebar-1 fdm-layout-classic clearfix">
+        <li class="fdm-section-header" id="Esquites">               
+                <div class="fdm-section-header-image-area" 
+                    style="background-image: url(./assets/images/esquites.jpg); background-repeat: no-repeat; background-size: cover; height: 350px; ">
+                </div>        
+                <h3 class="fdm-section-header">ESQUITES</h3>
+        </li>
+        <!-- Opcion Elote 1 -->
+        <li class="fdm-item fdm-item-has-price" data-postid="603" data-section="37" data-timeadded="1616630188">		
+          <div class="fdm-item-panel">    
+              <p class="fdm-item-title">Esquite Preparado <span>(korn)</span></p>
+              <div class="fdm-item-price-wrapper" data-min_price="1000000" data-max_price="0">
+                <div class="fdm-item-price">$2.75 each</div>
+              </div>
+            <div class="fdm-item-content">
+              <p><!-- wp:paragraph --></p>
+              <p>Description 1</p>
+              <p><!-- /wp:paragraph --></p>
+            </div>
+            <div class="clearfix"></div>
+          </div>        
+        </li>
+      </ul>
+    </div>
+    <div *ngIf="showDiv.tostitos">
+      <ul class="fdm-menu fdm-menu-classic fdm-menu-sidebar-1 fdm-layout-classic clearfix">
+        <li class="fdm-section-header" id="TostiEsquites">               
+                <div class="fdm-section-header-image-area" 
+                    style="background-image: url(./assets/images/tostiesquites.jpg); background-repeat: no-repeat; background-size: cover; height: 350px; ">
+                </div>        
+                <h3 class="fdm-section-header">TOSTIESQUITES</h3>
+        </li>
+        <!-- Opcion Elote 1 -->
+        <li class="fdm-item fdm-item-has-price" data-postid="603" data-section="37" data-timeadded="1616630188">		
+          <div class="fdm-item-panel">    
+              <p class="fdm-item-title">TostiEquite Preparado <span>(korn)</span></p>
+              <div class="fdm-item-price-wrapper" data-min_price="1000000" data-max_price="0">
+                <div class="fdm-item-price">$2.75 each</div>
+              </div>
+            <div class="fdm-item-content">
+              <p><!-- wp:paragraph --></p>
+              <p>Description 1</p>
+              <p><!-- /wp:paragraph --></p>
+            </div>
+            <div class="clearfix"></div>
+          </div>        
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
